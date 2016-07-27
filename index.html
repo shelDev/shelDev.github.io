@@ -1,152 +1,84 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-		<meta name="description" content="Michelle R Gilbank development">
-		<title>Michelle R Gilbank development</title>
-		
-		<!--[if lt IE 9]>
-		  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-		<link type="text/css" rel="stylesheet" href="/css/reset.css">
-		<style data-fontset-id="ce-fontset" type="text/css">
+<html lang="en-US" prefix="og: http://ogp.me/ns#" data-version="3.0.9">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="Michelle R Gilbank development">
+	<title>Michelle R Gilbank development</title>
+
+	<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+	<link type="text/css" rel="stylesheet" href="/css/reset.css">
+	<style data-fontset-id="ce-fontset" type="text/css">
 		/*Fontsets*/
+		
 		@font-face {
 			font-family: 'Circular Std Book';
-			src: url('http://www.gilbank.net/fonts/CircularStd-Book.eot'); /* IE9 Compat Modes */
-  src: url('http://www.gilbank.net/fonts/CircularStd-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('http://www.gilbank.net/fonts/CircularStd-Book.woff') format('woff'), /* Modern Browsers */
-       url('http://www.gilbank.net/fonts/CircularStd-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('http://www.gilbank.net/fonts/CircularStd-Book.svg#dd452d63ae05ddb466f19713a7d09fd5') format('svg'); /* Legacy iOS */
-       
-  font-style:   normal;
-  font-weight:  400;
-}
+			src: url('http://edenpulse.com/fonts/CircularStd-Book.eot');
+			/* IE9 Compat Modes */
+			src: url('http://edenpulse.com/fonts/CircularStd-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('http://edenpulse.com/fonts/CircularStd-Book.woff') format('woff'), /* Modern Browsers */
+			url('http://edenpulse.com/fonts/CircularStd-Book.ttf') format('truetype'), /* Safari, Android, iOS */
+			url('http://edenpulse.com/fonts/CircularStd-Book.svg#dd452d63ae05ddb466f19713a7d09fd5') format('svg');
+			/* Legacy iOS */
+			font-style: normal;
+			font-weight: 400;
+		}
+		
+		@font-face {
+			font-family: 'Circular Std Bold';
+			src: url('http://edenpulse.com/fonts/CircularStd-Bold.eot');
+			/* IE9 Compat Modes */
+			src: url('http://edenpulse.com/fonts/CircularStd-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+			url('http://edenpulse.com/fonts/CircularStd-Bold.woff') format('woff'), /* Modern Browsers */
+			url('http://edenpulse.com/fonts/CircularStd-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+			url('http://edenpulse.com/fonts/CircularStd-Bold.svg#b333381778fc1f96de44d359c7f8b95e') format('svg');
+			/* Legacy iOS */
+			font-style: normal;
+			font-weight: 700;
+		}
+	</style>
+	<style id="ce-fontset" type="text/css">
+		body,
+		textarea,
+		input {
+			font-family: "Circular Std Book", Helvetica, Arial, sans-serif !important;
+			font-style: normal;
+			font-weight: 400;
+		}
+		
+		.regular {
+			font-family: "Circular Std Book", Helvetica, Arial, sans-serif !important;
+			font-style: normal;
+			font-weight: 400;
+		}
+		
+		.bold,
+		.wysiwyg-ce h1,
+		.wysiwyg-ce h2,
+		.wysiwyg-ce h3,
+		.wysiwyg-ce h4,
+		.wysiwyg-ce h5,
+		.wysiwyg-ce h6,
+		#soularity h1,
+		#soularity h2,
+		#soularity h3,
+		#soularity h4,
+		#soularity h5,
+		#soularity h6 {
+			font-family: "Circular Std Bold", Helvetica, Arial, sans-serif;
+			font-style: normal;
+			font-weight: 700;
+		}
+	</style>
+	<link type="text/css" rel="stylesheet" href="/css/style.css">
+	<link type="text/css" rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/img/favicon.jpeg">
 
-@font-face {
-  font-family: 'Circular Std Bold';
-  src: url('http://www.gilbank.net/fonts/CircularStd-Bold.eot'); /* IE9 Compat Modes */
-  src: url('http://www.gilbank.net/fonts/CircularStd-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('http://www.gilbank.net/fonts/CircularStd-Bold.woff') format('woff'), /* Modern Browsers */
-       url('http://www.gilbank.net/fonts/CircularStd-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('http://www.gilbank.net/fonts/CircularStd-Bold.svg#b333381778fc1f96de44d359c7f8b95e') format('svg'); /* Legacy iOS */
-       
-  font-style:   normal;
-  font-weight:  700;
-}</style>
-<style id="ce-fontset" type="text/css">body, textarea, input { 
-font-family: "Circular Std Book", Helvetica, Arial, sans-serif !important; font-style: normal; font-weight: 400;}
-.regular { font-family: "Circular Std Book", Helvetica, Arial, sans-serif !important; font-style: normal; font-weight: 400; }
-.bold, .wysiwyg-ce h1, .wysiwyg-ce h2, .wysiwyg-ce h3, .wysiwyg-ce h4, .wysiwyg-ce h5, .wysiwyg-ce h6, #soularity h1, #soularity h2, #soularity h3, #soularity h4, #soularity h5, #soularity h6 { font-family: "Circular Std Bold", Helvetica, Arial, sans-serif; font-style: normal; font-weight: 700; }</style>		<link type="text/css" rel="stylesheet" href="/css/style.css">
-		<style type="text/css" id="soularity-custom-css">#navbar-bg { background: #141618 !important; }#fullscreen-menu { background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.95); }#navbar-bg { opacity: 1; }#navbar { border-bottom: 1px solid transparent !important; }.transparent { opacity: 0 !important; }@media (max-width: 767px) {.transparent { background: #141618 !important; }}#navbar .controls a .nav-icon { background: #cfaf8f !important; }#navbar .controls a svg { fill: #cfaf8f !important; }#fullscreen-menu .menu-inner nav ul li a, .follow-links ul li a svg, nav.standard ul li a { letter-spacing: 0px !important; }#fullscreen-menu .menu-inner nav ul li a, .follow-links ul li a svg, nav.standard ul li a { text-transform: normal !important; }#fullscreen-menu .menu-inner nav ul li { padding: 10px 0px; }#fullscreen-menu .menu-inner nav { padding: 40px 0px; }#fullscreen-menu .menu-inner nav ul li a, .follow-links ul li a svg, nav.standard ul li a { color: #cfaf8f !important; }.follow-links ul li a svg { fill: #cfaf8f !important; }nav.standard ul li a { text-decoration: none !important; }#fullscreen-menu .menu-inner nav ul li a { border-color:  !important; }#fullscreen-menu .menu-inner nav ul li.current-menu-item a, #fullscreen-menu .menu-inner nav ul li.current_page_item a, nav.standard ul li.current-menu-item a, nav.standard ul li.current_page_item a, #fullscreen-menu .menu-inner nav ul li.current-menu-item a:hover, #fullscreen-menu .menu-inner nav ul li.current_page_item a:hover, nav.standard ul li.current-menu-item a:hover, nav.standard ul li.current_page_item a:hover, .is-work nav.standard ul li.portfolio-grid a, .is-work #fullscreen-menu .menu-inner nav ul li.portfolio-grid a { color: #ffffff !important; }nav.standard ul li.current-menu-item a, nav.standard ul li.current_page_item a, nav.standard ul li.current-menu-item a:hover, nav.standard ul li.current_page_item a:hover, .is-work nav.standard ul li.portfolio-grid a { text-decoration: line-through !important; }#fullscreen-menu .menu-inner nav ul li.current-menu-item a, #fullscreen-menu .menu-inner nav ul li.current_page_item a, #fullscreen-menu .menu-inner nav ul li.current-menu-item a:hover, #fullscreen-menu .menu-inner nav ul li.current_page_item a:hover, .is-work #fullscreen-menu .menu-inner nav ul li.portfolio-grid a { border-color:  !important; }#fullscreen-menu .menu-inner nav ul li a:hover, .follow-links ul li a svg, nav.standard ul li a:hover { color: #ffffff !important; }.follow-links ul li a:hover svg { fill: #ffffff !important; }nav.standard ul li a:hover { text-decoration: line-through !important; }#fullscreen-menu .menu-inner nav ul li a:hover { border-color:  !important; }nav.standard ul li a { font-size: 14px !important; }#fullscreen-menu { height: 100%; }.menu-inner nav { transform: translateY(-50%); -webkit-transform: translateY(-50%); position: absolute; top: 50%; width: 100%; }.follow-links { position: absolute; bottom: 0px; width: 100%; }#fullscreen-menu .menu-inner nav ul li { border: 0px !important; }#fullscreen-menu .menu-inner nav ul li { text-align: center; }#fullscreen-menu .menu-inner .follow-links { background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0); }#fullscreen-menu .menu-inner .follow-links ul li a { padding-top: 5px; padding-bottom: 5px; }#fullscreen-menu .menu-inner .follow-links ul li a { padding-right: 10px; padding-left: 10px; }#fullscreen-menu .menu-inner .follow-links ul li a svg { fill: #cfaf8f !important; }#fullscreen-menu .menu-inner .follow-links ul li a:hover svg { fill: #ffffff !important; }.logo svg { fill:  !important; }.logo svg { width: 48px; height: 24px; }header { top: -54px; }#navbar, #navbar-bg, .controls a, .controls a span { height: 54px; }#navbar .controls a .nav-icon { margin-top: 27px !important; }.navbar-inner { height: 54px; overflow: hidden; }.controls a svg, div.header-icon { margin-top: 15px; }section#blog, .post-password-form, section#not-found { margin-top: 54px !important; }#fullscreen-menu .menu-inner nav.align-top { margin-top: 54px !important; transform: none; -webkit-transform: none; }#navbar #logo { padding-top: 15px !important; }.menu-style-nobutton ul li a, nav.standard ul li a { line-height: 54px !important; }.title-top { top: 54px; }.share-box { background: #ffffff !important;
-		  
-		}.soularity-share .text { background: #ffffff !important; }.soularity-share .text { color: #888888 !important; }.share-box .soularity-share .text { border-color: #e6e6e6 !important; }.wysiwyg, .wysiwyg p, .wysiwyg pre, .post-heading h2, #post .wysiwyg .meta p span, p.quote, .wysiwyg h1, .wysiwyg h2, .wysiwyg h3, .wysiwyg h4, .wysiwyg h5, .wysiwyg h6, #category-archives h4, h4#comments, .comment-autor, .comment-autor a, .comment-time, .comment-content p, h3#reply-title, .comments-pagination, .meta p a, section#comment h3#comments, .no-results, blockquote p, .quote-container p, .result-header h3 { color: #4a4a4a!important ;}.archives-close svg { fill: #4a4a4a!important ;}abbr, acronym { border-color: #4a4a4a !important;}#post .wysiwyg  a, .wysiwyg-ce a, #post .wysiwyg p a, p.quote a, .next p a, .previous p a, a.page-numbers, #category-archives nav ul li a, .cover-headline a { color: #cfaf8f!important ;}#post .wysiwyg { border-color: #cfaf8f!important ;}#post .soularity-share .button a { color: white !important; }#post .wysiwyg a:hover, .wysiwyg-ce a:hover, #post .wysiwyg p a:hover, .post-heading p a:hover, #post .wysiwyg .meta p a:hover, p.quote a:hover, #post .wysiwyg a.more-link:hover, .description a.more-link:hover, .next p a:hover, .previous p a:hover, #category-archives nav ul li a:hover, a.comment-edit-link:hover, a.comment-reply-link:hover, a.page-numbers:hover, section#category-archives nav ul li a:hover,  .cover-headline a:hover { color: #a68c72!important ;}#post .soularity-share .button a:hover { color: white !important; }.post-heading h2 a, .result-header h3, #category-archives h2 { color: #141618!important ;}.post-heading p, .post-heading p a, #post .wysiwyg .meta p a { color: #cfaf8f!important ;}#comment { background-color: #f7f6f2 !important;}form#commentform textarea, form#commentform input { background-color: #f7f6f2 !important;}form#commentform #submit, form#commentform input, form#commentform textarea { color: #000000 !important; }form#commentform textarea::-webkit-input-placeholder { color: #000000 !important; opacity: .5 !important;}form#commentform textarea::-moz-placeholder { color: #000000 !important; opacity: .5 !important;}form#commentform textarea:-ms-input-placeholder { color: #000000 !important; opacity: .5 !important;}form#commentform textareainput:-moz-placeholder { color: #000000 !important; opacity: .5 !important;}form#commentform input::-webkit-input-placeholder { color: #000000 !important; opacity: .5 !important;}form#commentform input::-moz-placeholder { color: #000000 !important; opacity: .5 !important;}form#commentform input:-ms-input-placeholder { color: #000000 !important; opacity: .5 !important;}form#commentform inputinput:-moz-placeholder { color: #000000 !important; opacity: .5 !important;}form#commentform textarea, form#commentform input { border-color: #e0e0e0 !important;}#post .wysiwyg a.more-link, .description a.more-link { color: #acacac !important; }#post .wysiwyg a.more-link, .description a.more-link { border-color: #e6e6e6!important ;}.edit-reply a { color: #aaaaaa!important ;}.edit-reply a { border-color: #e6e6e6!important ;}.post-divider { background: #ffffff!important ;}.post-password-form input, .result-header, #category-archives h4, .comment-content, pre, tt, code, kbd, blockquote, .wysiwyg table, .description table, .wysiwyg-ce table , .wysiwyg table th, .wysiwyg table td, .description table th, .description table td, .wysiwyg-ce table th, .wysiwyg-ce table td { border-color: #ffffff!important ;}.search-field { background: #ffffff!important ;}.search-field { border-color: #e6e6e6!important ;}.search-field { color: #000000!important ;}.close-search svg { fill: #000000 !important;}.search-form input::-webkit-input-placeholder { color: #000000 !important; opacity: 1;}.search-form input::-moz-placeholder { color: #000000 !important; opacity: 1;}.search-form input:-ms-input-placeholder { color: #000000 !important; opacity: 1;}body {background-color: #141618 !important;}.to-the-top a svg { fill: #cfaf8f !important; }.no-gutter-grid-sizer { width: 8.3333% !important; }.no-gutter-gutter-sizer { width: 0px; }.remove-gutter-yes { margin: 0px !important; }.masonry-span0{ width: 0% !important; float: left; }.masonry-span1{ width: 8.3333% !important; float: left; }.masonry-span2{ width: 16.6667% !important; float: left; }.masonry-span3{ width: 25% !important; float: left; }.masonry-span4{ width: 33.3333% !important; float: left; }.masonry-span5{ width: 41.6667% !important; float: left; }.masonry-span6{ width: 50% !important; float: left; }.masonry-span7{ width: 58.3333% !important; float: left; }.masonry-span8{ width: 66.6667% !important; float: left; }.masonry-span9{ width: 75% !important; float: left; }.masonry-span10{ width: 83.3333% !important; float: left; }.masonry-span11{ width: 91.6667% !important; float: left; }.masonry-span12{ width: 100% !important; float: left; }@media (max-width: 767px) {.masonry-span1, .masonry-span2, .masonry-span3, .masonry-span4, .masonry-span5, .masonry-span6, .masonry-span7, .masonry-span8, .masonry-span9, .masonry-span10, .masonry-span11, .masonry-span12 { width: 100% !important; }}.lightbox-overlay { background-color: rgba(255,255,255,0.98); -webkit-animation: fadein 0.35s; -moz-animation: fadein 0.35s; -ms-animation: fadein 0.35s; -o-animation: fadein 0.35s; animation: fadein 0.35s; }@keyframes fadein { from { background-color: rgba(255,255,255,0); } to { background-color: rgba(255,255,255,0.98); } }@-moz-keyframes fadein { from { background-color: rgba(255,255,255,0); } to { background-color: rgba(255,255,255,0.98); } }@-webkit-keyframes fadein { from { background-color: rgba(255,255,255,0); } to { background-color: rgba(255,255,255,0.98); } }@-ms-keyframes fadein { from { background-color: rgba(255,255,255,0); } to { background-color: rgba(255,255,255,0.98); } }@-o-keyframes fadein { from { background-color: rgba(255,255,255,0); } to { background-color: rgba(255,255,255,0.98); } }/*CUSTOM CSS*/
-.thumb-hover{overflow: hidden!important;}
-
-.thumb-hover h3{
-      /*letter-spacing: 3px!important;*/
-      font-size:32px!important;
-      width: 100%!important;
-      opacity:0!important;
-      position: absolute!important;
-      top: 50%!important;
-      text-align:center!important;
-      transform: translateY(50%)!important;
-      transition:all 0.6s ease!important;
-    }
-.thumb-hover h3 span{
-  position:relative;
-  top:10px;
-}
-
-.thumb-hover:hover {
-  background: rgba(20,22,24,0.85)!important;
-  transition:all 0.6s ease!important;
-  }
-  .thumb-hover:hover h3{
-    opacity:1!important;
-    transition:all 0.6s ease!important;
-    transform: translateY(-50%)!important;
-  }
-
-.thumb-hover::after {
-  	content: ''!important;
-  	position: absolute!important;
-  	height: 2px!important;
-  	width: 100%!important;
-  	top: 50%!important;
-  	margin-top: -1px!important;
-  	right: 0!important;
-    background:white!important;
-  	-webkit-transform: translate3d(-100%,0,0)!important;
-  	transform: translate3d(-100%,0,0)!important;
-  	-webkit-transition: -webkit-transform 0.5s!important;
-  	transition: transform 0.5s!important;
-  	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,0.5)!important;
-  	transition-timing-function: cubic-bezier(0.7,0,0.3,0.5)!important;
-    opacity:0.2!important;
-  /*  box-shadow: 0px 0px 5px rgba(255,255,255, 0.5)!important;*/
-
-  }
-
-  .thumb-hover:hover::after {
-  	-webkit-transform: translate3d(100%,0,0)!important;
-  	transform: translate3d(100%,0,0)!important;
-  }
-
-  .thumb-hover:hover::before {
-  	width:100%!important;
-
-  }
-
-label{
-font-size: 18px;
-color:#655e58;
-}
-
-input,textarea{
-    font-size: 16px;
-    padding: 15px;
-    background-color: white;
-    border: 2px solid #655e58;
-    color: #141618;
-}
-input:focus,textarea:focus { 
-    outline: none !important;
-    border-color: #CFAF8F;
-}
-::-webkit-input-placeholder { color:#655e58; }
-::-moz-placeholder { color:#655e58; } /* firefox 19+ */
-:-ms-input-placeholder { color:#655e58; } /* ie */
-input:-moz-placeholder { color:#655e58; }
-
-input[type=submit] {
-cursor:pointer;
-padding:15px 60px 15px 60px;
-text-transform:uppercase;
-letter-spacing:3px;
-font-size:14px;
-font-weight:bold;
-transition: all 0.5s ease-in-out;
-}
-input[type=submit]:hover{
-border-color:#CFAF8F;
-color:#141618;
-background-color:#CFAF8F;
-transition: all 0.5s ease-in-out;
-}
-
-.field-wrap{
-margin-bottom:40px!important;
-}
-.ninja-forms-required-items{
-font-size:12px;
-color:#655e58;
-}</style>
-<link rel="shortcut icon" href="http://www.gilbank.net/img/favicon.jpeg">
-
-<!-- google analytics 
+	<!-- google analytics 
 <script async="" src="/js/analytics.js"></script>
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -160,147 +92,179 @@ color:#655e58;
 </script>
 -->
 
-<!-- This site is optimized with the Yoast SEO plugin v3.3.4 - https://yoast.com/wordpress/plugins/seo/ -->
-<meta name="description" content="Michelle R Gilbank development">
-<meta name="robots" content="noodp">
-<link rel="canonical" href="http://www.gilbank.net/">
-<meta property="og:locale" content="en_EN">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Michelle R Gilbank development">
-<meta property="og:description" content="Michelle R Gilbank development">
-<meta property="og:url" content="http://www.gilbank.net/">
-<meta property="og:site_name" content="Michelle R Gilbank development">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:description" content="Michelle R Gilbank development">
-<meta name="twitter:title" content="Michelle R Gilbank development">
-<meta name="twitter:site" content="@Shel_i_am">
-<meta name="twitter:creator" content="@Shel_i_am">
-<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","url":"http:\/\/www.gilbank.net\/","name":"Michelle R Gilbank development","potentialAction":{"@type":"SearchAction","target":"http:\/\/www.gilbank.net\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
-<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Person","url":"http:\/\/www.gilbank.net\/","sameAs":["https:\/\/www.facebook.com\/Michelle.Gilbank","https:\/\/twitter.com\/Shel_i_am"],"name":"Michelle Gilbank"}</script>
-<!-- / Yoast SEO plugin. -->
+	<meta name="description" content="Michelle R Gilbank development">
+	<meta name="robots" content="noodp">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Michelle R Gilbank development">
+	<meta property="og:description" content="Michelle R Gilbank development">
+	<meta property="og:url" content="http://www.gilbank.net/">
+	<meta property="og:site_name" content="Michelle R Gilbank development">
 
-<link rel="alternate" type="application/rss+xml" title="Michelle R Gilbank development" href="http://www.gilbank.net/home/feed/">
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.gilbank.net\/js\/wp-emoji-release.min.js"}};
-			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script><script src="/js/wp-emoji-release.min.js" type="text/javascript"></script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel="stylesheet" id="mediaelement-css" href="./css/mediaelementplayer.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="wp-mediaelement-css" href="./css/wp-mediaelement.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="jetpack_css-css" href="./css/jetpack.css" type="text/css" media="all">
-<script type="text/javascript" src="./js/jquery.js"></script>
-<script type="text/javascript" src="./js/jquery-migrate.min.js"></script>
+	<link rel="stylesheet" id="mediaelement-css" href="./css/mediaelementplayer.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="wp-mediaelement-css" href="./css/wp-mediaelement.min.css" type="text/css" media="all">
+	<link rel="stylesheet" id="jetpack_css-css" href="./css/jetpack.css" type="text/css" media="all">
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/jquery-migrate.min.js"></script>
 
-		<!-- bottom admin bar -->
-		<style>html{margin-top:0px!important;}#wpadminbar{top:auto!important;bottom:0;}}</style>
-	<style type="text/css">#content_5nsr3z56q #button_column_content_zq5zti29y:hover {background-color:#141618 !important;color:#ffffff !important;border-color:#141618 !important;letter-spacing:3px !important;}</style><style type="text/css">#content_5nsr3z56q #button_column_content_byrfaz1g5:hover {background-color:#141618 !important;color:#ffffff !important;border-color:#141618 !important;letter-spacing:3px !important;}</style><style type="text/css">#content_joqsmicvi #button_column_content_w0k3ry1n2:hover {background-color:#ffffff !important;color:#655e58 !important;border-color:#ffffff !important;letter-spacing:3px !important;}</style><style type="text/css">#content_3f4gw3k77 #button_column_content_85626qlsm:hover {background-color:#000000 !important;color:#ffffff !important;border-color:#000000 !important;letter-spacing:0px !important;}</style><style type="text/css">#content_flp5b4uqj #button_column_content_270d7pzg8:hover {background-color:#ffffff !important;color:#655e58 !important;border-color:#655e58 !important;letter-spacing:3px !important;}</style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
-.en-markup-crop-options {
-    top: 18px !important;
-    left: 50% !important;
-    margin-left: -100px !important;
-    width: 200px !important;
-    border: 2px rgba(255,255,255,.38) solid !important;
-    border-radius: 4px !important;
-}
+</head>
 
-.en-markup-crop-options div div:first-of-type {
-    margin-left: 0px !important;
-}
-</style></head>
-	<body class="home page page-id-4 page-template-default">
-						<header style="opacity: 1; top: 0px;">
-			<div id="navbar-bg" class="navbar" data-navbar-opacity="1" data-dropdown-transparent="enabled" style="opacity: 1;"><!-- header bar background --></div>
-			<div id="navbar">
-			<div class="container"><div class="row"><div class="span12 navbar-inner"><div class="logo custom"><a id="logo" data-logo-height="24" class="has-logo" href="http://www.gilbank.net/" title="Michelle R Gilbank development">
-			  <svg xmlns="http://www.w3.org/2000/svg" viewBox="-198 196 444.1 203.3" enable-background="new -198 196 444.1 203.3"><g fill="#fff"><path d="m-190.7 390v-125.7h36.7v14.4c6.3-11.1 22.5-18.2 36.2-18.2 18 0 30.9 7.3 37.2 19.7 9.9-14.2 22-19.7 39-19.7 23.8 0 46.5 13.9 46.5 48.1v81.4h-37.2v-72.8c0-11.9-6.3-21.2-20-21.2s-21 10.4-21 21.5v72.5h-37.9v-72.8c0-11.9-6.3-21.2-20.2-21.2-13.4 0-20.7 10.4-20.7 21.8v72.2h-38.6"></path><path d="m37.1 390v-183.1h37.7v69.3c5.3-7.8 19.2-14.9 36.4-14.9 36.4 0 58.4 27.8 58.4 65.5 0 38.4-24.8 66-59.9 66-16.7 0-29.6-7.3-35.4-16.9v14.1h-37.2m65.8-94.1c-14.9 0-28.6 9.9-28.6 31.1 0 20.7 13.7 31.4 28.6 31.4s28.3-10.4 28.3-31.4c0-21.2-13.4-31.1-28.3-31.1"></path></g><path d="m213.6 340.5c14.2 0 26.1 11.6 26.1 25.8 0 13.9-11.9 26.1-26.1 26.1-14.2 0-25.8-12.1-25.8-26.1 0-14.2 11.7-25.8 25.8-25.8" fill="#cfaf8f"></path></svg></a></div>
-			  <div class="nav-wrapper"><div class="controls">
-					<a class="open-nav">
-						<span class="nav-icon"></span>
-					</a>
-				</div></div></div></div></div>			</div>
-		</header>
-		<div id="fullscreen-menu" class="full-height" style="top: 0px;">
-			<div class="menu-inner">
-				<nav class="fs-96px bold">
-					<ul id="menu-top-menu" class="menu"><li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item menu-item-61"><a href="http://www.gilbank.net/">work</a></li>
-<li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="http://www.gilbank.net/about-me/">about</a></li>
-<li id="menu-item-806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-806"><a href="http://www.gilbank.net/contact/">contact</a></li>
-<li id="menu-item-798" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-798"><a href="http://www.gilbank.net/classes/">classes</a></li>
-</ul>				</nav>
-				<div class="follow-links">
-					<ul>
-						    <li><a class="twitter social-link" href="https://twitter.com/Shel_i_am" title="Twitter" target="_blank"><svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<body class="home page page-id-4 page-template-default">
+	<header style="opacity: 1; top: 0px;">
+		<div id="navbar-bg" class="navbar" data-navbar-opacity="1" data-dropdown-transparent="enabled" style="opacity: 1;">
+			<!-- header bar background -->
+		</div>
+		<div id="navbar">
+			<div class="container">
+				<div class="row">
+					<div class="span12 navbar-inner">
+						<div class="logo custom">
+							<a id="logo" data-logo-height="24" class="has-logo" href="http://www.gilbank.net/" title="Michelle R Gilbank development"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-198 196 444.1 203.3" enable-background="new -198 196 444.1 203.3"><g fill="#fff"><path d="m-190.7 390v-125.7h36.7v14.4c6.3-11.1 22.5-18.2 36.2-18.2 18 0 30.9 7.3 37.2 19.7 9.9-14.2 22-19.7 39-19.7 23.8 0 46.5 13.9 46.5 48.1v81.4h-37.2v-72.8c0-11.9-6.3-21.2-20-21.2s-21 10.4-21 21.5v72.5h-37.9v-72.8c0-11.9-6.3-21.2-20.2-21.2-13.4 0-20.7 10.4-20.7 21.8v72.2h-38.6"/></g><path d="m213.6 340.5c14.2 0 26.1 11.6 26.1 25.8 0 13.9-11.9 26.1-26.1 26.1-14.2 0-25.8-12.1-25.8-26.1 0-14.2 11.7-25.8 25.8-25.8" fill="#cfaf8f"/></svg></a>
+						</div>
+						<div class="nav-wrapper">
+							<div class="controls"><a class="open-nav"><span class="nav-icon"></span></a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="fullscreen-menu" class="full-height" style="top: 0px;">
+		<div class="menu-inner">
+			<nav class="fs-96px bold">
+				<ul id="menu-top-menu" class="menu">
+					<li id="menu-item-61" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item menu-item-61"><a href="http://www.gilbank.net/">work</a></li>
+					<li id="menu-item-23" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23"><a href="http://www.gilbank.net/about-me/">about</a></li>
+					<li id="menu-item-806" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-806"><a href="http://www.gilbank.net/contact/">contact</a></li>
+					<li id="menu-item-798" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-798"><a href="http://www.gilbank.net/classes/">classes</a></li>
+				</ul>
+			</nav>
+			<div class="follow-links">
+				<ul>
+					<li>
+						<a class="twitter social-link" href="https://twitter.com/Shel_i_am" title="Twitter" target="_blank">
+							<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
 <path d="M16,3.536c-0.589,0.261-1.221,0.438-1.885,0.517c0.678-0.406,1.198-1.05,1.443-1.816c-0.634,0.376-1.337,0.649-2.085,0.797
 	c-0.599-0.638-1.452-1.037-2.396-1.037c-1.813,0-3.283,1.47-3.283,3.282c0,0.257,0.029,0.508,0.085,0.748
 	c-2.728-0.137-5.147-1.444-6.766-3.43c-0.283,0.485-0.444,1.049-0.444,1.65c0,1.139,0.579,2.144,1.46,2.732
 	C1.592,6.963,1.086,6.816,0.643,6.57c0,0.014,0,0.027,0,0.041c0,1.59,1.132,2.917,2.633,3.219C3,9.905,2.71,9.945,2.411,9.945
 	c-0.212,0-0.417-0.021-0.618-0.059c0.418,1.304,1.63,2.253,3.066,2.28c-1.123,0.88-2.539,1.405-4.077,1.405
 	c-0.265,0-0.526-0.016-0.783-0.046C1.453,14.456,3.178,15,5.032,15c6.038,0,9.34-5.002,9.34-9.34c0-0.142-0.003-0.284-0.01-0.425
-	C15.003,4.773,15.56,4.195,16,3.536z"></path>
+	C15.003,4.773,15.56,4.195,16,3.536z"/>
 </svg>
-</a></li>
-    
-    <li><a class="linkedin social-link" href="https://www.linkedin.com/in/webdevcoder" title="Linked In" target="_blank">
-    	<svg version="1.1" id="Ebene_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
-<g>
-	<g>
-		<path d="M14.815,0H1.181C0.529,0,0,0.517,0,1.153v13.693C0,15.483,0.529,16,1.181,16h13.634C15.467,16,16,15.483,16,14.845V1.153
+						</a>
+					</li>
+					<li>
+						<a class="linkedin social-link" href="https://www.linkedin.com/in/webdevcoder" title="Linked In" target="_blank">
+							<svg version="1.1" id="Ebene_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+								y="0px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+								<g>
+									<g>
+										<path d="M14.815,0H1.181C0.529,0,0,0.517,0,1.153v13.693C0,15.483,0.529,16,1.181,16h13.634C15.467,16,16,15.483,16,14.845V1.153
 			C16,0.517,15.467,0,14.815,0z M4.745,13.634H2.371V5.999h2.374V13.634z M3.558,4.955c-0.761,0-1.376-0.617-1.376-1.376
 			c0-0.759,0.615-1.376,1.376-1.376c0.759,0,1.375,0.617,1.375,1.376C4.934,4.338,4.317,4.955,3.558,4.955z M13.633,13.634h-2.37
 			V9.921c0-0.886-0.017-2.025-1.234-2.025c-1.235,0-1.423,0.965-1.423,1.961v3.777H6.234V5.999H8.51v1.043h0.032
 			c0.317-0.6,1.091-1.233,2.246-1.233c2.401,0,2.845,1.581,2.845,3.638V13.634z"></path>
-	</g>
-</g>
-</svg>
-</a></li>
-					</ul>
-				</div>
+									</g>
+								</g>
+							</svg>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
-		<div id="wrapper">
-			<div id="content">
+	</div>
+	<div id="wrapper">
+		<div id="content">
 
-			
-				
-					
-			
-						
+
+
+
+
+
 			<!-- content fade -->
 			<div class="fade-content" style="opacity: 1;">
-				<div id="content-holder" class=""><div id="content_5nsr3z56q" class="multi-column" data-sort="1">
-				
-				
-				
-				
-				
-				
-				<div class="mc-content-container" style="padding-top: 160px;padding-bottom: 160px;background-color: #141618;" data-content-id="content_5nsr3z56q" data-content-type="multi-column"><div id="masonry-content_5nsr3z56q" class="container" style="position: relative; height: 586px; background-color: transparent;"><div class="row"><div class="grid-sizer"></div><div class="gutter-sizer"></div><div class="span4 masonry-item remove-gutter-" style="position: absolute; left: 0px; top: 0px;"><div class="mc-sub-content-container" style="padding-top: 20px;background-color: transparent;" data-content-id="content_5nsr3z56q" data-content-type="multi-column">
-				
-			<div data-content-id="content_5nsr3z56q" data-paragraph-id="content_5nsr3z56q" data-content-type="multi-column" class="wysiwyg-ce  "><h1 data-font-size="16px"><span style="color:#FFFFFF;"><span class="regular">Michelle R Gilbank<br><span class="bold">web, app &amp; cloud development</span></span></span></h1></div></div><div class="mc-sub-content-container" style="padding-top: 10px;padding-bottom: 80px;background-color: transparent;" data-content-id="content_5nsr3z56q" data-content-type="multi-column" data-modules-array="button">
-				
-			<div class="is-shortcode"><div class="executed"><script type="text/javascript">(function($){$(document).ready(function(){$("head").append('<style type="text/css">#content_5nsr3z56q #button_column_content_zq5zti29y:hover {background-color:#141618 !important;color:#ffffff !important;border-color:#141618 !important;letter-spacing:3px !important;}</style>');});})(jQuery);</script><div class="button-wrapper" style="width: 100%; text-align: left;"><a id="button_column_content_zq5zti29y" href="http://www.gilbank.net/about-me/" target="_self" data-font-size="14px" class="ce-button  bold" style="width: auto !important;color:#cfaf8f;letter-spacing:3px;background-color:#141618;padding:0px !important;border-width:0px !important;border-color:#141618;border-radius:0px !important;-moz-border-radius:0px !important;-webkit-border-radius:0px !important;">ABOUT ME</a></div></div>
-			<div class="unexecuted">[unex_ce_button id="content_5nsr3z56q,column_content_zq5zti29y" button_text_color="#cfaf8f" button_font="bold" button_font_size="14px" button_width="auto" button_alignment="left" button_text_spacing="3px" button_bg_color="#141618" button_padding="0px" button_border_width="0px" button_border_color="#141618" button_border_radius="0px" button_text_hover_color="#ffffff" button_text_spacing_hover="3px" button_bg_hover_color="#141618" button_border_hover_color="#141618" button_link="http://www.gilbank.net/about-me/" button_link_type="url" button_link_target="_self" has_container="" in_column="1"]ABOUT ME[/ce_button]</div></div></div></div>
-			<div class="span8 masonry-item remove-gutter-" style="position: absolute; left: 400px; top: 0px;"><div class="mc-sub-content-container" style="background-color: transparent;" data-content-id="content_5nsr3z56q" data-content-type="multi-column">
-				
-			<div data-content-id="content_5nsr3z56q" data-paragraph-id="content_5nsr3z56q" data-content-type="multi-column" class="wysiwyg-ce  "><p data-font-size="24px"><span style="color:#655e58;"><span class="bold">development</span></span></p></div></div><div class="mc-sub-content-container" style="background-color: transparent;" data-content-id="content_5nsr3z56q" data-content-type="multi-column">
-				
-			<div data-content-id="content_5nsr3z56q" data-paragraph-id="content_5nsr3z56q" data-content-type="multi-column" class="wysiwyg-ce  "><h2 data-font-size="120px" data-line-height="132px"><span style="color:#CFAF8F;"><span class="bold">clean<br>simple<br>accurate.</span></span><p></p><p data-line-height="24px" data-font-size="16px">&nbsp;</p><p data-line-height="24px" data-font-size="16px"><span class="regular"><span style="color:#FFFFFF;">Portfolio 2015</span></span></p></h2></div></div><div class="mc-sub-content-container" style="padding-top: 10px;background-color: transparent;" data-content-id="content_5nsr3z56q" data-content-type="multi-column" data-modules-array="button">
-				
-			<div class="is-shortcode"><div class="executed"><script type="text/javascript">(function($){$(document).ready(function(){$("head").append('<style type="text/css">#content_5nsr3z56q #button_column_content_byrfaz1g5:hover {background-color:#141618 !important;color:#ffffff !important;border-color:#141618 !important;letter-spacing:3px !important;}</style>');});})(jQuery);</script><div class="button-wrapper" style="width: 100%; text-align: left;"><a id="button_column_content_byrfaz1g5" href="http://www.gilbank.net/#content_a5hl7q3lw" target="_self" data-font-size="14px" class="ce-button  bold" style="width: auto !important;color:#cfaf8f;letter-spacing:3px;background-color:#141618;padding:0px !important;border-width:0px !important;border-color:#141618;border-radius:0px !important;-moz-border-radius:0px !important;-webkit-border-radius:0px !important;">SELECTED PROJECTS</a></div></div><div class="unexecuted">[unex_ce_button id="content_5nsr3z56q,column_content_byrfaz1g5" button_text_color="#cfaf8f" button_font="bold" button_font_size="14px" button_width="auto" button_alignment="left" button_text_spacing="3px" button_bg_color="#141618" button_padding="0px" button_border_width="0px" button_border_color="#141618" button_border_radius="0px" button_text_hover_color="#ffffff" button_text_spacing_hover="3px" button_bg_hover_color="#141618" button_border_hover_color="#141618" button_link="#content_a5hl7q3lw" button_link_type="url" button_link_target="_self" has_container="" in_column="1"]SELECTED PROJECTS[/ce_button]</div></div></div></div></div></div>
-		<script type="text/javascript">
+				<div id="content-holder" class="">
+					<div id="content_5nsr3z56q" class="multi-column" data-sort="1">
+
+
+
+
+
+
+						<div class="mc-content-container" style="padding-top: 160px;padding-bottom: 160px;background-color: #141618;" data-content-id="content_5nsr3z56q"
+							data-content-type="multi-column">
+							<div id="masonry-content_5nsr3z56q" class="container" style="position: relative; height: 586px; background-color: transparent;">
+								<div class="row">
+									<div class="grid-sizer"></div>
+									<div class="gutter-sizer"></div>
+									<div class="span4 masonry-item remove-gutter-" style="position: absolute; left: 0px; top: 0px;">
+										<div class="mc-sub-content-container" style="padding-top: 20px;background-color: transparent;" data-content-id="content_5nsr3z56q"
+											data-content-type="multi-column">
+
+											<div data-content-id="content_5nsr3z56q" data-paragraph-id="content_5nsr3z56q" data-content-type="multi-column" class="wysiwyg-ce  ">
+												<h1 data-font-size="16px"><span style="color:#FFFFFF;"><span class="regular">Michelle R Gilbank<br><span class="bold">web, app &amp; cloud development</span></span>
+													</span>
+												</h1>
+											</div>
+										</div>
+										<div class="mc-sub-content-container" style="padding-top: 10px;padding-bottom: 80px;background-color: transparent;"
+											data-content-id="content_5nsr3z56q" data-content-type="multi-column" data-modules-array="button">
+
+											<div class="is-shortcode">
+												<div class="executed"><script type="text/javascript">(function($){$(document).ready(function(){$("head").append('<style type="text/css">#content_5nsr3z56q #button_column_content_zq5zti29y:hover {background-color:#141618 !important;color:#ffffff !important;border-color:#141618 !important;letter-spacing:3px !important;}</style>');});})(jQuery);</script>
+													<div
+														class="button-wrapper" style="width: 100%; text-align: left;"><a id="button_column_content_zq5zti29y" href="http://www.gilbank.net/about-me/" target="_self" data-font-size="14px"
+															class="ce-button  bold" style="width: auto !important;color:#cfaf8f;letter-spacing:3px;background-color:#141618;padding:0px !important;border-width:0px !important;border-color:#141618;border-radius:0px !important;-moz-border-radius:0px !important;-webkit-border-radius:0px !important;">ABOUT ME</a></div>
+											</div>
+											<div class="unexecuted">[unex_ce_button id="content_5nsr3z56q,column_content_zq5zti29y" button_text_color="#cfaf8f" button_font="bold"
+												button_font_size="14px" button_width="auto" button_alignment="left" button_text_spacing="3px" button_bg_color="#141618"
+												button_padding="0px" button_border_width="0px" button_border_color="#141618" button_border_radius="0px" button_text_hover_color="#ffffff"
+												button_text_spacing_hover="3px" button_bg_hover_color="#141618" button_border_hover_color="#141618" button_link="http://www.gilbank.net/about-me/"
+												button_link_type="url" button_link_target="_self" has_container="" in_column="1"]ABOUT ME[/ce_button]</div>
+										</div>
+									</div>
+								</div>
+								<div class="span8 masonry-item remove-gutter-" style="position: absolute; left: 400px; top: 0px;">
+									<div class="mc-sub-content-container" style="background-color: transparent;" data-content-id="content_5nsr3z56q"
+										data-content-type="multi-column">
+
+										<div data-content-id="content_5nsr3z56q" data-paragraph-id="content_5nsr3z56q" data-content-type="multi-column" class="wysiwyg-ce  ">
+											<p data-font-size="24px"><span style="color:#655e58;"><span class="bold">development</span></span>
+											</p>
+										</div>
+									</div>
+									<div class="mc-sub-content-container" style="background-color: transparent;" data-content-id="content_5nsr3z56q"
+										data-content-type="multi-column">
+
+										<div data-content-id="content_5nsr3z56q" data-paragraph-id="content_5nsr3z56q" data-content-type="multi-column" class="wysiwyg-ce  ">
+											<h2 data-font-size="120px" data-line-height="132px"><span style="color:#CFAF8F;"><span class="bold">clean<br>simple<br>accurate.</span></span>
+												<p></p>
+												<p data-line-height="24px" data-font-size="16px">&nbsp;</p>
+												<p data-line-height="24px" data-font-size="16px"><span class="regular"><span style="color:#FFFFFF;">Portfolio 2015</span></span>
+												</p>
+											</h2>
+										</div>
+									</div>
+									<div class="mc-sub-content-container" style="padding-top: 10px;background-color: transparent;" data-content-id="content_5nsr3z56q"
+										data-content-type="multi-column" data-modules-array="button">
+
+										<div class="is-shortcode">
+											<div class="executed"><script type="text/javascript">(function($){$(document).ready(function(){$("head").append('<style type="text/css">#content_5nsr3z56q #button_column_content_byrfaz1g5:hover {background-color:#141618 !important;color:#ffffff !important;border-color:#141618 !important;letter-spacing:3px !important;}</style>');});})(jQuery);</script>
+												<div
+													class="button-wrapper" style="width: 100%; text-align: left;"><a id="button_column_content_byrfaz1g5" href="http://www.gilbank.net/#content_a5hl7q3lw" target="_self" data-font-size="14px"
+														class="ce-button  bold" style="width: auto !important;color:#cfaf8f;letter-spacing:3px;background-color:#141618;padding:0px !important;border-width:0px !important;border-color:#141618;border-radius:0px !important;-moz-border-radius:0px !important;-webkit-border-radius:0px !important;">SELECTED PROJECTS</a></div>
+										</div>
+										<div class="unexecuted">[unex_ce_button id="content_5nsr3z56q,column_content_byrfaz1g5" button_text_color="#cfaf8f" button_font="bold"
+											button_font_size="14px" button_width="auto" button_alignment="left" button_text_spacing="3px" button_bg_color="#141618"
+											button_padding="0px" button_border_width="0px" button_border_color="#141618" button_border_radius="0px" button_text_hover_color="#ffffff"
+											button_text_spacing_hover="3px" button_bg_hover_color="#141618" button_border_hover_color="#141618" button_link="#content_a5hl7q3lw"
+											button_link_type="url" button_link_target="_self" has_container="" in_column="1"]SELECTED PROJECTS[/ce_button]</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script type="text/javascript">
 			(function ($) {
 				$(document).ready(function () {
 					/* init masonry */
@@ -324,22 +288,58 @@ img.emoji {
 				});
 			})(jQuery);
 		</script>
-		</div></div><div id="content_joqsmicvi" class="multi-column" data-sort="1">
-				
-				
-				
-				
-				
-				
-				<div class="mc-content-container" style="padding-top: 80px;padding-bottom: 80px;background-color: #ffffff;" data-content-id="content_joqsmicvi" data-content-type="multi-column"><div id="masonry-content_joqsmicvi" class="container" style="position: relative; height: 136px; background-color: transparent;"><div class="row"><div class="grid-sizer"></div><div class="gutter-sizer"></div><div class="span4 masonry-item remove-gutter-" style="position: absolute; left: 0px; top: 0px;"><div class="mc-sub-content-container" style="padding-bottom: 40px;background-color: transparent;" data-content-id="content_joqsmicvi" data-content-type="multi-column">
-				
-			<div data-content-id="content_joqsmicvi" data-paragraph-id="content_joqsmicvi" data-content-type="multi-column" class="wysiwyg-ce  "><h3>In short</h3></div></div></div><div class="span8 masonry-item remove-gutter-" style="position: absolute; left: 400px; top: 0px;"><div class="mc-sub-content-container" style="background-color: transparent;" data-content-id="content_joqsmicvi" data-content-type="multi-column">
-				
-			<div data-content-id="content_joqsmicvi" data-paragraph-id="content_joqsmicvi" data-content-type="multi-column" class="wysiwyg-ce  "><p>Hello, I’m Michelle Gilbank, a web developer and Microsoft partner, currently freelancing. I focus on keeping design simple and data accurate.</p></div></div><div class="mc-sub-content-container" style="padding-top: 40px;background-color: transparent;" data-content-id="content_joqsmicvi" data-content-type="multi-column" data-modules-array="button">
-				
-			<div class="is-shortcode"><div class="executed"><script type="text/javascript">(function($){$(document).ready(function(){$("head").append('<style type="text/css">#content_joqsmicvi #button_column_content_w0k3ry1n2:hover {background-color:#ffffff !important;color:#655e58 !important;border-color:#ffffff !important;letter-spacing:3px !important;}</style>');});})(jQuery);</script><div class="button-wrapper" style="width: 100%; text-align: left;"><a id="button_column_content_w0k3ry1n2" href="http://www.gilbank.net/about-me/" target="_self" data-font-size="14px" class="ce-button  bold" style="width: auto !important;color:#cfaf8f;letter-spacing:3px;background-color:#ffffff;border-width:0px !important;border-color:#ffffff;">MORE ABOUT ME</a></div></div>
-			<div class="unexecuted">[unex_ce_button id="content_joqsmicvi,column_content_w0k3ry1n2" button_text_color="#cfaf8f" button_font="bold" button_font_size="14px" button_width="auto" button_alignment="left" button_text_spacing="3px" button_bg_color="#ffffff" button_padding="" button_border_width="0px" button_border_color="#ffffff" button_border_radius="0" button_text_hover_color="#655e58" button_text_spacing_hover="3px" button_bg_hover_color="#ffffff" button_border_hover_color="#ffffff" button_link="http://www.gilbank.net/about-me/" button_link_type="url" button_link_target="_self" has_container="" in_column="1"]MORE ABOUT ME[/ce_button]</div></div></div></div></div></div>
-		<script type="text/javascript">
+				</div>
+			</div>
+			<div id="content_joqsmicvi" class="multi-column" data-sort="1">
+
+
+
+
+
+
+				<div class="mc-content-container" style="padding-top: 80px;padding-bottom: 80px;background-color: #ffffff;" data-content-id="content_joqsmicvi"
+					data-content-type="multi-column">
+					<div id="masonry-content_joqsmicvi" class="container" style="position: relative; height: 136px; background-color: transparent;">
+						<div class="row">
+							<div class="grid-sizer"></div>
+							<div class="gutter-sizer"></div>
+							<div class="span4 masonry-item remove-gutter-" style="position: absolute; left: 0px; top: 0px;">
+								<div class="mc-sub-content-container" style="padding-bottom: 40px;background-color: transparent;" data-content-id="content_joqsmicvi"
+									data-content-type="multi-column">
+
+									<div data-content-id="content_joqsmicvi" data-paragraph-id="content_joqsmicvi" data-content-type="multi-column" class="wysiwyg-ce  ">
+										<h3>In short</h3>
+									</div>
+								</div>
+							</div>
+							<div class="span8 masonry-item remove-gutter-" style="position: absolute; left: 400px; top: 0px;">
+								<div class="mc-sub-content-container" style="background-color: transparent;" data-content-id="content_joqsmicvi" data-content-type="multi-column">
+
+									<div data-content-id="content_joqsmicvi" data-paragraph-id="content_joqsmicvi" data-content-type="multi-column" class="wysiwyg-ce  ">
+										<p>Hello, I’m Michelle Gilbank, a web developer and Microsoft partner, currently freelancing. I focus on keeping design
+											simple and data accurate.</p>
+									</div>
+								</div>
+								<div class="mc-sub-content-container" style="padding-top: 40px;background-color: transparent;" data-content-id="content_joqsmicvi"
+									data-content-type="multi-column" data-modules-array="button">
+
+									<div class="is-shortcode">
+										<div class="executed"><script type="text/javascript">(function($){$(document).ready(function(){$("head").append('<style type="text/css">#content_joqsmicvi #button_column_content_w0k3ry1n2:hover {background-color:#ffffff !important;color:#655e58 !important;border-color:#ffffff !important;letter-spacing:3px !important;}</style>');});})(jQuery);</script>
+											<div
+												class="button-wrapper" style="width: 100%; text-align: left;"><a id="button_column_content_w0k3ry1n2" href="http://www.gilbank.net/about-me/" target="_self" data-font-size="14px"
+													class="ce-button  bold" style="width: auto !important;color:#cfaf8f;letter-spacing:3px;background-color:#ffffff;border-width:0px !important;border-color:#ffffff;">MORE ABOUT ME</a></div>
+									</div>
+									<div class="unexecuted">[unex_ce_button id="content_joqsmicvi,column_content_w0k3ry1n2" button_text_color="#cfaf8f" button_font="bold" button_font_size="14px"
+										button_width="auto" button_alignment="left" button_text_spacing="3px" button_bg_color="#ffffff" button_padding=""
+										button_border_width="0px" button_border_color="#ffffff" button_border_radius="0" button_text_hover_color="#655e58"
+										button_text_spacing_hover="3px" button_bg_hover_color="#ffffff" button_border_hover_color="#ffffff" button_link="http://www.gilbank.net/about-me/"
+										button_link_type="url" button_link_target="_self" has_container="" in_column="1"]MORE ABOUT ME[/ce_button]</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<script type="text/javascript">
 			(function ($) {
 				$(document).ready(function () {
 					/* init masonry */
@@ -363,21 +363,43 @@ img.emoji {
 				});
 			})(jQuery);
 		</script>
-		</div></div><div id="content_3f4gw3k77" class="multi-column" data-sort="1" style="">
-				
-				
-				
-				
-				
-				<div class="mc-content-container" style="padding-top: 40px;padding-bottom: 40px;background-color: #f7f6f2;" data-content-id="content_3f4gw3k77" data-content-type="multi-column">
-				  <div id="masonry-content_3f4gw3k77" class="container" style="position: relative; height: 40px; background-color: transparent;">
-				    <div class="row"><div class="grid-sizer"></div><div class="gutter-sizer"></div>
-				    <div class="span6 masonry-item remove-gutter-" style="position: absolute; left: 0px; top: 0px;"><div class="mc-sub-content-container" style="background-color: transparent;" data-content-id="content_3f4gw3k77" data-content-type="multi-column">
-				
-			<div data-content-id="content_3f4gw3k77" data-paragraph-id="content_3f4gw3k77" data-content-type="multi-column" class="wysiwyg-ce  "><h3>Selected Projects</h3></div></div></div><div class="span6 masonry-item remove-gutter-" style="position: absolute; left: 600px; top: 0px;"><div class="mc-sub-content-container" style="background-color: transparent;" data-content-id="content_3f4gw3k77" data-content-type="multi-column" data-modules-array="button">
-				
-			<div class="is-shortcode"><div class="executed"><script type="text/javascript">(function($){$(document).ready(function(){$("head").append('<style type="text/css">#content_3f4gw3k77 #button_column_content_85626qlsm:hover {background-color:#000000 !important;color:#ffffff !important;border-color:#000000 !important;letter-spacing:0px !important;}</style>');});})(jQuery);</script><div class="button-wrapper" style="width: 100%; text-align: right;"></div></div></div></div></div></div></div>
-		<script type="text/javascript">
+			</div>
+		</div>
+		<div id="content_3f4gw3k77" class="multi-column" data-sort="1" style="">
+
+
+
+
+
+			<div class="mc-content-container" style="padding-top: 40px;padding-bottom: 40px;background-color: #f7f6f2;" data-content-id="content_3f4gw3k77"
+				data-content-type="multi-column">
+				<div id="masonry-content_3f4gw3k77" class="container" style="position: relative; height: 40px; background-color: transparent;">
+					<div class="row">
+						<div class="grid-sizer"></div>
+						<div class="gutter-sizer"></div>
+						<div class="span6 masonry-item remove-gutter-" style="position: absolute; left: 0px; top: 0px;">
+							<div class="mc-sub-content-container" style="background-color: transparent;" data-content-id="content_3f4gw3k77" data-content-type="multi-column">
+
+								<div data-content-id="content_3f4gw3k77" data-paragraph-id="content_3f4gw3k77" data-content-type="multi-column" class="wysiwyg-ce  ">
+									<h3>Selected Projects</h3>
+								</div>
+							</div>
+						</div>
+						<div class="span6 masonry-item remove-gutter-" style="position: absolute; left: 600px; top: 0px;">
+							<div class="mc-sub-content-container" style="background-color: transparent;" data-content-id="content_3f4gw3k77" data-content-type="multi-column"
+								data-modules-array="button">
+
+								<div class="is-shortcode">
+									<div class="executed"><script type="text/javascript">(function($){$(document).ready(function(){$("head").append('<style type="text/css">#content_3f4gw3k77 #button_column_content_85626qlsm:hover {background-color:#000000 !important;color:#ffffff !important;border-color:#000000 !important;letter-spacing:0px !important;}</style>');});})(jQuery);</script>
+										<div
+											class="button-wrapper" style="width: 100%; text-align: right;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
 			(function ($) {
 				$(document).ready(function () {
 					/* init masonry */
@@ -401,95 +423,173 @@ img.emoji {
 				});
 			})(jQuery);
 		</script>
-		</div></div><div id="content_a5hl7q3lw" class="content-thumbnails" data-sort="1">
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				<div class="content-container" style="background-image: url(http://www.gilbank.net/img/thumb-coming-soon.png); background-color: rgb(20, 22, 24); display: block; background-position: 100% 100%; background-repeat: no-repeat no-repeat;" data-content-id="content_a5hl7q3lw" data-content-type="content-thumbnails"><div class="thumbs-content"><section id="thumbnails">
-				  <div id="masonry-content_a5hl7q3lw" style="position: relative; height: 2850px;"><div class="no-gutter-grid-sizer"></div>
-				  <div class="no-gutter-gutter-sizer"></div>
-				<div style="line-height: 0 !important; font-size: 0px !important; position: absolute; left: 0%; top: 0px; opacity: 1;" class="thumb grid-item masonry-thumbs-item masonry-content_a5hl7q3lw-item masonry-content_a5hl7q3lw-item-0 remove-gutter-yes masonry-span8" data-thumb-src="http://www.gilbank.net/img/thumb-imagify.jpg"><a href="http://www.gilbank.net/work/imagify/" title="Imagify">
-				  <div class="thumb-inner"><div class="thumb-hover" style="background-color: rgb(20, 22, 24) !important; background-color: rgba(20, 22, 24, 0.90) !important;"><h3 class="bold fs-22px lh-22px" style="text-align: center; 
+		</div>
+	</div>
+	<div id="content_a5hl7q3lw" class="content-thumbnails" data-sort="1">
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="content-container" style="background-image: url(http://www.gilbank.net/img/thumb-coming-soon.png); background-color: rgb(20, 22, 24); display: block; background-position: 100% 100%; background-repeat: no-repeat no-repeat;"
+			data-content-id="content_a5hl7q3lw" data-content-type="content-thumbnails">
+			<div class="thumbs-content">
+				<section id="thumbnails">
+					<div id="masonry-content_a5hl7q3lw" style="position: relative; height: 2850px;">
+						<div class="no-gutter-grid-sizer"></div>
+						<div class="no-gutter-gutter-sizer"></div>
+						<div style="line-height: 0 !important; font-size: 0px !important; position: absolute; left: 0%; top: 0px; opacity: 1;" class="thumb grid-item masonry-thumbs-item masonry-content_a5hl7q3lw-item masonry-content_a5hl7q3lw-item-0 remove-gutter-yes masonry-span8"
+							data-thumb-src="http://www.gilbank.net/img/thumb-imagify.jpg">
+							<a href="http://www.gilbank.net/work/imagify/" title="Imagify">
+								<div class="thumb-inner">
+									<div class="thumb-hover" style="background-color: rgb(20, 22, 24) !important; background-color: rgba(20, 22, 24, 0.90) !important;">
+										<h3 class="bold fs-22px lh-22px" style="text-align: center; 
 							top: 50%; 
 							-webkit-transform: translateY(-50%);
 							-moz-transform: translateY(-50%);
 							-ms-transform: translateY(-50%);
 							transform: translateY(-50%);
-						color: #ffffff !important;">Imagify<br><span class="regular fs-14px lh-14px" style="color: #cfaf8f !important;">service — responsive</span></h3></div><img alt="Imagify" src="/img/thumb-imagify.jpg"></div></a></div>
-						<div style="line-height: 0 !important; font-size: 0px !important; position: absolute; left: 66.6316%; top: 0px; opacity: 1;" class="thumb grid-item masonry-thumbs-item masonry-content_a5hl7q3lw-item masonry-content_a5hl7q3lw-item-1 remove-gutter-yes masonry-span4" data-thumb-src="http://www.gilbank.net/img/thumb-safran-epices-prestige1.jpg"><a href="http://www.gilbank.net/work/safran-epices-prestige/" title="Safran Epices Prestige">
-						  <div class="thumb-inner"><div class="thumb-hover" style="background-color: rgb(20, 22, 24) !important; background-color: rgba(20, 22, 24, 0.90) !important;"><h3 class="bold fs-22px lh-22px" style="text-align: center; 
+						color: #ffffff !important;">Imagify<br><span class="regular fs-14px lh-14px" style="color: #cfaf8f !important;">service — responsive</span></h3>
+									</div><img alt="Imagify" src="/img/thumb-imagify.jpg"></div>
+							</a>
+						</div>
+						<div style="line-height: 0 !important; font-size: 0px !important; position: absolute; left: 66.6316%; top: 0px; opacity: 1;"
+							class="thumb grid-item masonry-thumbs-item masonry-content_a5hl7q3lw-item masonry-content_a5hl7q3lw-item-1 remove-gutter-yes masonry-span4"
+							data-thumb-src="http://www.gilbank.net/img/thumb-safran-epices-prestige1.jpg">
+							<a href="http://www.gilbank.net/work/safran-epices-prestige/" title="Safran Epices Prestige">
+								<div class="thumb-inner">
+									<div class="thumb-hover" style="background-color: rgb(20, 22, 24) !important; background-color: rgba(20, 22, 24, 0.90) !important;">
+										<h3 class="bold fs-22px lh-22px" style="text-align: center; 
 							top: 50%; 
 							-webkit-transform: translateY(-50%);
 							-moz-transform: translateY(-50%);
 							-ms-transform: translateY(-50%);
 							transform: translateY(-50%);
-						color: #ffffff !important;">Safran Epices Prestige<br><span class="regular fs-14px lh-14px" style="color: #cfaf8f !important;">ecommerce</span></h3></div><img alt="Safran Epices Prestige" src="/img/thumb-safran-epices-prestige1.jpg"></div></a></div>
-						<div style="line-height: 0 !important; font-size: 0px !important; position: absolute; left: 66.6316%; top: 475px; opacity: 1;" class="thumb grid-item masonry-thumbs-item masonry-content_a5hl7q3lw-item masonry-content_a5hl7q3lw-item-2 remove-gutter-yes masonry-span4" data-thumb-src="http://www.gilbank.net/img/thumb-escale-sensorielle1.jpg"><a href="http://www.gilbank.net/work/escale-sensorielle/" title="Escale Sensorielle">
-						  <div class="thumb-inner"><div class="thumb-hover" style="background-color: rgb(20, 22, 24) !important; background-color: rgba(20, 22, 24, 0.90) !important;"><h3 class="bold fs-22px lh-22px" style="text-align: center; 
+						color: #ffffff !important;">Safran Epices Prestige<br><span class="regular fs-14px lh-14px" style="color: #cfaf8f !important;">ecommerce</span></h3>
+									</div><img alt="Safran Epices Prestige" src="/img/thumb-safran-epices-prestige1.jpg"></div>
+							</a>
+						</div>
+						<div style="line-height: 0 !important; font-size: 0px !important; position: absolute; left: 66.6316%; top: 475px; opacity: 1;"
+							class="thumb grid-item masonry-thumbs-item masonry-content_a5hl7q3lw-item masonry-content_a5hl7q3lw-item-2 remove-gutter-yes masonry-span4"
+							data-thumb-src="http://www.gilbank.net/img/thumb-escale-sensorielle1.jpg">
+							<a href="http://www.gilbank.net/work/escale-sensorielle/" title="Escale Sensorielle">
+								<div class="thumb-inner">
+									<div class="thumb-hover" style="background-color: rgb(20, 22, 24) !important; background-color: rgba(20, 22, 24, 0.90) !important;">
+										<h3 class="bold fs-22px lh-22px" style="text-align: center; 
 							top: 50%; 
 							-webkit-transform: translateY(-50%);
 							-moz-transform: translateY(-50%);
 							-ms-transform: translateY(-50%);
 							transform: translateY(-50%);
-						color: #ffffff !important;">Escale Sensorielle<br><span class="regular fs-14px lh-14px" style="color: #cfaf8f !important;">ecommerce</span></h3></div><img alt="Escale Sensorielle" src="/img/thumb-escale-sensorielle1.jpg"></div></a></div>
-						<div style="line-height: 0 !important; font-size: 0px !important; position: absolute; left: 0%; top: 950px; opacity: 1;" class="thumb grid-item masonry-thumbs-item masonry-content_a5hl7q3lw-item masonry-content_a5hl7q3lw-item-3 remove-gutter-yes masonry-span4" data-thumb-src="http://www.gilbank.net/img/thumb-grande-place1.jpg"><a href="http://www.gilbank.net/work/grande-place/" title="Grande Place"><div class="thumb-inner">
-						  <div class="thumb-hover" style="background-color: rgb(20, 22, 24) !important; background-color: rgba(20, 22, 24, 0.90) !important;"><h3 class="bold fs-22px lh-22px" style="text-align: center; 
+						color: #ffffff !important;">Escale Sensorielle<br><span class="regular fs-14px lh-14px" style="color: #cfaf8f !important;">ecommerce</span></h3>
+									</div><img alt="Escale Sensorielle" src="/img/thumb-escale-sensorielle1.jpg"></div>
+							</a>
+						</div>
+						<div style="line-height: 0 !important; font-size: 0px !important; position: absolute; left: 0%; top: 950px; opacity: 1;"
+							class="thumb grid-item masonry-thumbs-item masonry-content_a5hl7q3lw-item masonry-content_a5hl7q3lw-item-3 remove-gutter-yes masonry-span4"
+							data-thumb-src="http://www.gilbank.net/img/thumb-grande-place1.jpg">
+							<a href="http://www.gilbank.net/work/grande-place/" title="Grande Place">
+								<div class="thumb-inner">
+									<div class="thumb-hover" style="background-color: rgb(20, 22, 24) !important; background-color: rgba(20, 22, 24, 0.90) !important;">
+										<h3 class="bold fs-22px lh-22px" style="text-align: center; 
 							top: 50%; 
 							-webkit-transform: translateY(-50%);
 							-moz-transform: translateY(-50%);
 							-ms-transform: translateY(-50%);
 							transform: translateY(-50%);
-						color: #ffffff !important;">Grande Place<br><span class="regular fs-14px lh-14px" style="color: #cfaf8f !important;">webdesign — responsive</span></h3></div><img alt="Grande Place" src="/img/thumb-grande-place1.jpg"></div></a></div>
-						<div style="line-height: 0 !important; font-size: 0px !important; position: absolute; left: 33.3158%; top: 950px; opacity: 1;" class="thumb grid-item masonry-thumbs-item masonry-content_a5hl7q3lw-item masonry-content_a5hl7q3lw-item-4 remove-gutter-yes masonry-span8" data-thumb-src="http://www.gilbank.net/img/thumb-atelier-de-curiosite2.jpg"><a href="http://www.gilbank.net/work/atelier-de-curiosite/" title="Atelier de curiosité">
-						  <div class="thumb-inner"><div class="thumb-hover" style="background-color: rgb(20, 22, 24) !important; background-color: rgba(20, 22, 24, 0.90) !important;"><h3 class="bold fs-22px lh-22px" style="text-align: center; 
+						color: #ffffff !important;">Grande Place<br><span class="regular fs-14px lh-14px" style="color: #cfaf8f !important;">webdesign — responsive</span></h3>
+									</div><img alt="Grande Place" src="/img/thumb-grande-place1.jpg"></div>
+							</a>
+						</div>
+						<div style="line-height: 0 !important; font-size: 0px !important; position: absolute; left: 33.3158%; top: 950px; opacity: 1;"
+							class="thumb grid-item masonry-thumbs-item masonry-content_a5hl7q3lw-item masonry-content_a5hl7q3lw-item-4 remove-gutter-yes masonry-span8"
+							data-thumb-src="http://www.gilbank.net/img/thumb-atelier-de-curiosite2.jpg">
+							<a href="http://www.gilbank.net/work/atelier-de-curiosite/" title="Atelier de curiosité">
+								<div class="thumb-inner">
+									<div class="thumb-hover" style="background-color: rgb(20, 22, 24) !important; background-color: rgba(20, 22, 24, 0.90) !important;">
+										<h3 class="bold fs-22px lh-22px" style="text-align: center; 
 							top: 50%; 
 							-webkit-transform: translateY(-50%);
 							-moz-transform: translateY(-50%);
 							-ms-transform: translateY(-50%);
 							transform: translateY(-50%);
-						color: #ffffff !important;">Atelier de curiosité<br><span class="regular fs-14px lh-14px" style="color: #cfaf8f !important;">blog — responsive</span></h3></div><img alt="Atelier de curiosité" src="/img/thumb-atelier-de-curiosite2.jpg"></div></a></div>
-						<div style="line-height: 0 !important; font-size: 0px !important; position: absolute; left: 0%; top: 1425px; opacity: 1;" class="thumb grid-item masonry-thumbs-item masonry-content_a5hl7q3lw-item masonry-content_a5hl7q3lw-item-5 remove-gutter-yes masonry-span4" data-thumb-src="http://www.gilbank.net/img/thumb-hanna-edge1.jpg"><a href="http://www.gilbank.net/work/hanna-edge/" title="Hanna Edge">
-						  <div class="thumb-inner"><div class="thumb-hover" style="background-color: rgb(20, 22, 24) !important; background-color: rgba(20, 22, 24, 0.90) !important;"><h3 class="bold fs-22px lh-22px" style="text-align: center; 
+						color: #ffffff !important;">Atelier de curiosité<br><span class="regular fs-14px lh-14px" style="color: #cfaf8f !important;">blog — responsive</span></h3>
+									</div><img alt="Atelier de curiosité" src="/img/thumb-atelier-de-curiosite2.jpg"></div>
+							</a>
+						</div>
+						<div style="line-height: 0 !important; font-size: 0px !important; position: absolute; left: 0%; top: 1425px; opacity: 1;"
+							class="thumb grid-item masonry-thumbs-item masonry-content_a5hl7q3lw-item masonry-content_a5hl7q3lw-item-5 remove-gutter-yes masonry-span4"
+							data-thumb-src="http://www.gilbank.net/img/thumb-hanna-edge1.jpg">
+							<a href="http://www.gilbank.net/work/hanna-edge/" title="Hanna Edge">
+								<div class="thumb-inner">
+									<div class="thumb-hover" style="background-color: rgb(20, 22, 24) !important; background-color: rgba(20, 22, 24, 0.90) !important;">
+										<h3 class="bold fs-22px lh-22px" style="text-align: center; 
 							top: 50%; 
 							-webkit-transform: translateY(-50%);
 							-moz-transform: translateY(-50%);
 							-ms-transform: translateY(-50%);
 							transform: translateY(-50%);
-						color: #ffffff !important;">Hanna Edge<br><span class="regular fs-14px lh-14px" style="color: #cfaf8f !important;">webdesign — responsive</span></h3></div><img alt="Hanna Edge" src="/img/thumb-hanna-edge1.jpg"></div></a></div>
-						<div style="line-height: 0 !important; font-size: 0px !important; position: absolute; left: 0%; top: 1900px; opacity: 1;" class="thumb grid-item masonry-thumbs-item masonry-content_a5hl7q3lw-item masonry-content_a5hl7q3lw-item-6 remove-gutter-yes masonry-span8" data-thumb-src="http://www.gilbank.net/img/thumb-thalasseo1.jpg"><a href="http://www.gilbank.net/work/thalasseo/" title="Thalasseo">
-						  <div class="thumb-inner"><div class="thumb-hover" style="background-color: rgb(20, 22, 24) !important; background-color: rgba(20, 22, 24, 0.90) !important;"><h3 class="bold fs-22px lh-22px" style="text-align: center; 
+						color: #ffffff !important;">Hanna Edge<br><span class="regular fs-14px lh-14px" style="color: #cfaf8f !important;">webdesign — responsive</span></h3>
+									</div><img alt="Hanna Edge" src="/img/thumb-hanna-edge1.jpg"></div>
+							</a>
+						</div>
+						<div style="line-height: 0 !important; font-size: 0px !important; position: absolute; left: 0%; top: 1900px; opacity: 1;"
+							class="thumb grid-item masonry-thumbs-item masonry-content_a5hl7q3lw-item masonry-content_a5hl7q3lw-item-6 remove-gutter-yes masonry-span8"
+							data-thumb-src="http://www.gilbank.net/img/thumb-thalasseo1.jpg">
+							<a href="http://www.gilbank.net/work/thalasseo/" title="Thalasseo">
+								<div class="thumb-inner">
+									<div class="thumb-hover" style="background-color: rgb(20, 22, 24) !important; background-color: rgba(20, 22, 24, 0.90) !important;">
+										<h3 class="bold fs-22px lh-22px" style="text-align: center; 
 							top: 50%; 
 							-webkit-transform: translateY(-50%);
 							-moz-transform: translateY(-50%);
 							-ms-transform: translateY(-50%);
 							transform: translateY(-50%);
-						color: #ffffff !important;">Thalasseo<br><span class="regular fs-14px lh-14px" style="color: #cfaf8f !important;">webdesign — responsive</span></h3></div><img alt="Thalasseo" src="/img/thumb-thalasseo1.jpg"></div></a></div>
-						<div style="line-height: 0 !important; font-size: 0px !important; position: absolute; left: 66.6316%; top: 1900px; opacity: 1;" class="thumb grid-item masonry-thumbs-item masonry-content_a5hl7q3lw-item masonry-content_a5hl7q3lw-item-7 remove-gutter-yes masonry-span4" data-thumb-src="http://www.gilbank.net/img/thumb-hanna-instruments1.jpg"><a href="http://www.gilbank.net/work/hanna-instruments/" title="Hanna Instruments">
-						  <div class="thumb-inner"><div class="thumb-hover" style="background-color: rgb(20, 22, 24) !important; background-color: rgba(20, 22, 24, 0.90) !important;"><h3 class="bold fs-22px lh-22px" style="text-align: center; 
+						color: #ffffff !important;">Thalasseo<br><span class="regular fs-14px lh-14px" style="color: #cfaf8f !important;">webdesign — responsive</span></h3>
+									</div><img alt="Thalasseo" src="/img/thumb-thalasseo1.jpg"></div>
+							</a>
+						</div>
+						<div style="line-height: 0 !important; font-size: 0px !important; position: absolute; left: 66.6316%; top: 1900px; opacity: 1;"
+							class="thumb grid-item masonry-thumbs-item masonry-content_a5hl7q3lw-item masonry-content_a5hl7q3lw-item-7 remove-gutter-yes masonry-span4"
+							data-thumb-src="http://www.gilbank.net/img/thumb-hanna-instruments1.jpg">
+							<a href="http://www.gilbank.net/work/hanna-instruments/" title="Hanna Instruments">
+								<div class="thumb-inner">
+									<div class="thumb-hover" style="background-color: rgb(20, 22, 24) !important; background-color: rgba(20, 22, 24, 0.90) !important;">
+										<h3 class="bold fs-22px lh-22px" style="text-align: center; 
 							top: 50%; 
 							-webkit-transform: translateY(-50%);
 							-moz-transform: translateY(-50%);
 							-ms-transform: translateY(-50%);
 							transform: translateY(-50%);
-						color: #ffffff !important;">Hanna Instruments<br><span class="regular fs-14px lh-14px" style="color: #cfaf8f !important;">corporate — webdesign</span></h3></div><img alt="Hanna Instruments" src="/img/thumb-hanna-instruments1.jpg"></div></a></div>
-						<div style="line-height: 0 !important; font-size: 0px !important; position: absolute; left: 66.6316%; top: 2375px; opacity: 1;" class="thumb grid-item masonry-thumbs-item masonry-content_a5hl7q3lw-item masonry-content_a5hl7q3lw-item-8 remove-gutter-yes masonry-span4" data-thumb-src="http://www.gilbank.net/img/thumb-domaine-de-darb1.jpg"><a href="http://www.gilbank.net/work/domaine-de-darb/" title="Domaine de Darb">
-						  <div class="thumb-inner"><div class="thumb-hover" style="background-color: rgb(20, 22, 24) !important; background-color: rgba(20, 22, 24, 0.90) !important;"><h3 class="bold fs-22px lh-22px" style="text-align: center; 
+						color: #ffffff !important;">Hanna Instruments<br><span class="regular fs-14px lh-14px" style="color: #cfaf8f !important;">corporate — webdesign</span></h3>
+									</div><img alt="Hanna Instruments" src="/img/thumb-hanna-instruments1.jpg"></div>
+							</a>
+						</div>
+						<div style="line-height: 0 !important; font-size: 0px !important; position: absolute; left: 66.6316%; top: 2375px; opacity: 1;"
+							class="thumb grid-item masonry-thumbs-item masonry-content_a5hl7q3lw-item masonry-content_a5hl7q3lw-item-8 remove-gutter-yes masonry-span4"
+							data-thumb-src="http://www.gilbank.net/img/thumb-domaine-de-darb1.jpg">
+							<a href="http://www.gilbank.net/work/domaine-de-darb/" title="Domaine de Darb">
+								<div class="thumb-inner">
+									<div class="thumb-hover" style="background-color: rgb(20, 22, 24) !important; background-color: rgba(20, 22, 24, 0.90) !important;">
+										<h3 class="bold fs-22px lh-22px" style="text-align: center; 
 							top: 50%; 
 							-webkit-transform: translateY(-50%);
 							-moz-transform: translateY(-50%);
 							-ms-transform: translateY(-50%);
 							transform: translateY(-50%);
-						color: #ffffff !important;">Domaine de Darb<br><span class="regular fs-14px lh-14px" style="color: #cfaf8f !important;">webdesign — responsive</span></h3></div><img alt="Domaine de Darb" src="/img/thumb-domaine-de-darb1.jpg"></div></a></div></div>
-		<script type="text/javascript">
+						color: #ffffff !important;">Domaine de Darb<br><span class="regular fs-14px lh-14px" style="color: #cfaf8f !important;">webdesign — responsive</span></h3>
+									</div><img alt="Domaine de Darb" src="/img/thumb-domaine-de-darb1.jpg"></div>
+							</a>
+						</div>
+					</div>
+					<script type="text/javascript">
 			(function ($) {
 				$(document).ready(function () {
 					
@@ -516,28 +616,66 @@ img.emoji {
 				});
 			})(jQuery);
 		</script>
-	</section></div><div class="container"><div class="row"><div class="span12"><div class="thumbnails-edit"><div class="is-thumbnails"></div></div></div></div></div></div></div><div id="content_flp5b4uqj" class="multi-column" data-sort="1" style="">
-				
-				
-				
-				
-				
-				
-				<div class="mc-content-container" style="padding-top: 80px;background-color: #ffffff;" data-content-id="content_flp5b4uqj" data-content-type="multi-column">
-				  <div id="masonry-content_flp5b4uqj" class="container" style="position: relative; height: 234px; background-color: transparent;"><div class="row"><div class="grid-sizer"></div><div class="gutter-sizer"></div>
-				  <div class="span4 masonry-item remove-gutter-" style="position: absolute; left: 0px; top: 0px;">
-				  <div class="mc-sub-content-container" style="background-color: transparent;" data-content-id="content_flp5b4uqj" data-content-type="multi-column">
-				
-			<div data-content-id="content_flp5b4uqj" data-paragraph-id="content_flp5b4uqj" data-content-type="multi-column" class="wysiwyg-ce  "><h3>Contact me</h3></div></div></div>
-			<div class="span6 masonry-item remove-gutter-" style="position: absolute; left: 400px; top: 0px;"><div class="mc-sub-content-container" style="background-color: transparent;" data-content-id="content_flp5b4uqj" data-content-type="multi-column">
-				
-			<div data-content-id="content_flp5b4uqj" data-paragraph-id="content_flp5b4uqj" data-content-type="multi-column" class="wysiwyg-ce  "><p data-font-size="16px"><span class="regular">If you’d like to talk about a project, ask me some questions,&nbsp;or just want to say hi, don't hesitate and get in touch !</span></p></div></div>
-			<div class="mc-sub-content-container" style="padding-top: 40px;padding-bottom: 80px;background-color: transparent;" data-content-id="content_flp5b4uqj" data-content-type="multi-column" data-modules-array="button">
-				
-			<div class="is-shortcode"><div class="executed"><script type="text/javascript">(function($){$(document).ready(function(){$("head").append('<style type="text/css">#content_flp5b4uqj #button_column_content_270d7pzg8:hover {background-color:#ffffff !important;color:#655e58 !important;border-color:#655e58 !important;letter-spacing:3px !important;}</style>');});})(jQuery);</script>
-			<div class="button-wrapper" style="width: 100%; text-align: left;"><a id="button_column_content_270d7pzg8" href="mailto:mail@soularity.info" target="_self" data-font-size="14px" class="ce-button  bold" style="width: auto !important;color:#ffffff;letter-spacing:3px;background-color:#141618;padding:15px 60px 15px 60px !important;border-width:2px !important;border-color:#141618;border-radius:0px !important;-moz-border-radius:0px !important;-webkit-border-radius:0px !important;">WRITE AN EMAIL</a></div></div>
-			<div class="unexecuted">[unex_ce_button id="content_flp5b4uqj,column_content_270d7pzg8" button_text_color="#ffffff" button_font="bold" button_font_size="14px" button_width="auto" button_alignment="left" button_text_spacing="3px" button_bg_color="#141618" button_padding="15px 60px 15px 60px" button_border_width="2px" button_border_color="#141618" button_border_radius="0px" button_text_hover_color="#655e58" button_text_spacing_hover="3px" button_bg_hover_color="#ffffff" button_border_hover_color="#655e58" button_link="mail@soularity.info" button_link_type="email" button_link_target="_self" has_container="" in_column="1"]WRITE AN EMAIL[/ce_button]</div></div></div></div></div></div>
-		<script type="text/javascript">
+				</section>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						<div class="thumbnails-edit">
+							<div class="is-thumbnails"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="content_flp5b4uqj" class="multi-column" data-sort="1" style="">
+
+
+
+
+
+
+		<div class="mc-content-container" style="padding-top: 80px;background-color: #ffffff;" data-content-id="content_flp5b4uqj"
+			data-content-type="multi-column">
+			<div id="masonry-content_flp5b4uqj" class="container" style="position: relative; height: 234px; background-color: transparent;">
+				<div class="row">
+					<div class="grid-sizer"></div>
+					<div class="gutter-sizer"></div>
+					<div class="span4 masonry-item remove-gutter-" style="position: absolute; left: 0px; top: 0px;">
+						<div class="mc-sub-content-container" style="background-color: transparent;" data-content-id="content_flp5b4uqj" data-content-type="multi-column">
+
+							<div data-content-id="content_flp5b4uqj" data-paragraph-id="content_flp5b4uqj" data-content-type="multi-column" class="wysiwyg-ce  ">
+								<h3>Contact me</h3>
+							</div>
+						</div>
+					</div>
+					<div class="span6 masonry-item remove-gutter-" style="position: absolute; left: 400px; top: 0px;">
+						<div class="mc-sub-content-container" style="background-color: transparent;" data-content-id="content_flp5b4uqj" data-content-type="multi-column">
+
+							<div data-content-id="content_flp5b4uqj" data-paragraph-id="content_flp5b4uqj" data-content-type="multi-column" class="wysiwyg-ce  ">
+								<p data-font-size="16px"><span class="regular">If you’d like to talk about a project, ask me some questions,&nbsp;or just want to say hi, don't hesitate and get in touch !</span></p>
+							</div>
+						</div>
+						<div class="mc-sub-content-container" style="padding-top: 40px;padding-bottom: 80px;background-color: transparent;" data-content-id="content_flp5b4uqj"
+							data-content-type="multi-column" data-modules-array="button">
+
+							<div class="is-shortcode">
+								<div class="executed"><script type="text/javascript">(function($){$(document).ready(function(){$("head").append('<style type="text/css">#content_flp5b4uqj #button_column_content_270d7pzg8:hover {background-color:#ffffff !important;color:#655e58 !important;border-color:#655e58 !important;letter-spacing:3px !important;}</style>');});})(jQuery);</script>
+									<div class="button-wrapper" style="width: 100%; text-align: left;"><a id="button_column_content_270d7pzg8" href="mailto:mail@soularity.info" target="_self" data-font-size="14px" class="ce-button  bold"
+											style="width: auto !important;color:#ffffff;letter-spacing:3px;background-color:#141618;padding:15px 60px 15px 60px !important;border-width:2px !important;border-color:#141618;border-radius:0px !important;-moz-border-radius:0px !important;-webkit-border-radius:0px !important;">WRITE AN EMAIL</a></div>
+								</div>
+								<div class="unexecuted">[unex_ce_button id="content_flp5b4uqj,column_content_270d7pzg8" button_text_color="#ffffff" button_font="bold" button_font_size="14px"
+									button_width="auto" button_alignment="left" button_text_spacing="3px" button_bg_color="#141618" button_padding="15px
+									60px 15px 60px" button_border_width="2px" button_border_color="#141618" button_border_radius="0px" button_text_hover_color="#655e58"
+									button_text_spacing_hover="3px" button_bg_hover_color="#ffffff" button_border_hover_color="#655e58" button_link="mail@soularity.info"
+									button_link_type="email" button_link_target="_self" has_container="" in_column="1"]WRITE AN EMAIL[/ce_button]</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
 			(function ($) {
 				$(document).ready(function () {
 					/* init masonry */
@@ -561,25 +699,61 @@ img.emoji {
 				});
 			})(jQuery);
 		</script>
-		</div></div>
-		<div id="content_9dpy0gsac" class="multi-column" data-sort="1">
+		</div>
+	</div>
+	<div id="content_9dpy0gsac" class="multi-column" data-sort="1">
 
-		<div class="mc-content-container" style="padding-top: 40px;padding-bottom: 40px;background-color: #ffffff;" data-content-id="content_9dpy0gsac" data-content-type="multi-column">
-		  <div id="masonry-content_9dpy0gsac" class="container" style="position: relative; height: 128px; background-color: transparent;"><div class="row"><div class="grid-sizer"></div><div class="gutter-sizer"></div>
-		  <div class="span3 masonry-item remove-gutter-" style="position: absolute; left: 0px; top: 0px; background-color: transparent;">
-		    <div class="mc-sub-content-container" style="padding-top: 40px;padding-bottom: 40px;background-color: transparent;" data-content-id="content_9dpy0gsac" data-content-type="multi-column">
-				
-			<div data-content-id="content_9dpy0gsac" data-paragraph-id="content_9dpy0gsac" data-content-type="multi-column" class="wysiwyg-ce  "><p data-font-size="16px" data-line-height="24px"><span class="regular">© 2016<br>Michelle R Gilbank</span></p></div></div></div>
-			<div class="span4 masonry-item remove-gutter-" style="position: absolute; left: 300px; top: 0px; background-color: transparent;"><div class="mc-sub-content-container" style="padding-top: 40px;padding-bottom: 40px;background-color: transparent;" data-content-id="content_9dpy0gsac" data-content-type="multi-column">
-				
-			<div data-content-id="content_9dpy0gsac" data-paragraph-id="content_9dpy0gsac" data-content-type="multi-column" class="wysiwyg-ce  "><p data-font-size="16px" data-line-height="24px"><span class="regular"><span class="bold">Follow me on</span><br><a href="http://twitter.com/Shel_i_am">twitter</a> -&nbsp; <a href="http://linkedin.com/in/webdevcoder">linkedin</a></span></p></div></div></div>
-			<div class="span3 masonry-item remove-gutter-" style="position: absolute; left: 700px; top: 0px; background-color: transparent;"><div class="mc-sub-content-container" style="padding-top: 40px;padding-bottom: 40px;background-color: transparent;" data-content-id="content_9dpy0gsac" data-content-type="multi-column">
-				
-			<div data-content-id="content_9dpy0gsac" data-paragraph-id="content_9dpy0gsac" data-content-type="multi-column" class="wysiwyg-ce  "><p data-line-height="24px" data-font-size="16px"><span class="bold">Get in touch</span><br><a href="mailto:mail@soularity.info?subject=Hi!">mail@soularity.info</a></p></div></div></div><div class="span2 masonry-item remove-gutter-" style="position: absolute; left: 1000px; top: 0px; background-color: transparent;">
-			  <div class="mc-sub-content-container" style="padding-top: 20px;background-color: transparent;" data-content-id="content_9dpy0gsac" data-content-type="multi-column" data-modules-array="code">
-				
-			<div class="code-edit"><div class="is-code"></div></div><div class="code-content"><div class="ce-code"><a href="http://soularitylabs.com/"><img style="width:80px;display:block;margin:auto;" src="/img/soularity.svg"></a></div></div></div></div></div></div>
-		<script type="text/javascript">
+		<div class="mc-content-container" style="padding-top: 40px;padding-bottom: 40px;background-color: #ffffff;" data-content-id="content_9dpy0gsac"
+			data-content-type="multi-column">
+			<div id="masonry-content_9dpy0gsac" class="container" style="position: relative; height: 128px; background-color: transparent;">
+				<div class="row">
+					<div class="grid-sizer"></div>
+					<div class="gutter-sizer"></div>
+					<div class="span3 masonry-item remove-gutter-" style="position: absolute; left: 0px; top: 0px; background-color: transparent;">
+						<div class="mc-sub-content-container" style="padding-top: 40px;padding-bottom: 40px;background-color: transparent;" data-content-id="content_9dpy0gsac"
+							data-content-type="multi-column">
+
+							<div data-content-id="content_9dpy0gsac" data-paragraph-id="content_9dpy0gsac" data-content-type="multi-column" class="wysiwyg-ce  ">
+								<p data-font-size="16px" data-line-height="24px"><span class="regular">© 2016<br>Michelle R Gilbank</span></p>
+							</div>
+						</div>
+					</div>
+					<div class="span4 masonry-item remove-gutter-" style="position: absolute; left: 300px; top: 0px; background-color: transparent;">
+						<div class="mc-sub-content-container" style="padding-top: 40px;padding-bottom: 40px;background-color: transparent;"
+							data-content-id="content_9dpy0gsac" data-content-type="multi-column">
+
+							<div data-content-id="content_9dpy0gsac" data-paragraph-id="content_9dpy0gsac" data-content-type="multi-column" class="wysiwyg-ce  ">
+								<p data-font-size="16px" data-line-height="24px"><span class="regular"><span class="bold">Follow me on</span><br><a href="http://twitter.com/Shel_i_am">twitter</a>									-&nbsp; <a href="http://linkedin.com/in/webdevcoder">linkedin</a></span>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="span3 masonry-item remove-gutter-" style="position: absolute; left: 700px; top: 0px; background-color: transparent;">
+						<div class="mc-sub-content-container" style="padding-top: 40px;padding-bottom: 40px;background-color: transparent;"
+							data-content-id="content_9dpy0gsac" data-content-type="multi-column">
+
+							<div data-content-id="content_9dpy0gsac" data-paragraph-id="content_9dpy0gsac" data-content-type="multi-column" class="wysiwyg-ce  ">
+								<p data-line-height="24px" data-font-size="16px"><span class="bold">Get in touch</span><br><a href="mailto:mail@soularity.info?subject=Hi!">mail@soularity.info</a></p>
+							</div>
+						</div>
+					</div>
+					<div class="span2 masonry-item remove-gutter-" style="position: absolute; left: 1000px; top: 0px; background-color: transparent;">
+						<div class="mc-sub-content-container" style="padding-top: 20px;background-color: transparent;" data-content-id="content_9dpy0gsac"
+							data-content-type="multi-column" data-modules-array="code">
+
+							<div class="code-edit">
+								<div class="is-code"></div>
+							</div>
+							<div class="code-content">
+								<div class="ce-code">
+									<a href="http://soularitylabs.com/"><img style="width:80px;display:block;margin:auto;" src="/img/soularity.svg"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript">
 			(function ($) {
 				$(document).ready(function () {
 					/* init masonry */
@@ -603,39 +777,44 @@ img.emoji {
 				});
 			})(jQuery);
 		</script>
-		</div></div></div>			</div>	
-			
-												<!-- content -->
-			</div>
-		<!-- wrapper -->
 		</div>
-		<div class="to-the-top" style="display: none;">
-			<a class="top-button"><svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="53px" height="20px" viewBox="0 0 53 20" enable-background="new 0 0 53 20" xml:space="preserve">
-<g id="Ebene_3">
-</g>
-<g>
-	<polygon points="43.886,16.221 42.697,17.687 26.5,4.731 10.303,17.688 9.114,16.221 26.5,2.312 	"></polygon>
-</g>
-</svg>
-</a>
-		</div>
-		<div class="overlay fade"></div>
-		<script type="text/javascript" src="/js/devicepx-jetpack.js"></script>
-<script type="text/javascript">
+	</div>
+	</div>
+	</div>
+
+	<!-- content -->
+	</div>
+	<!-- wrapper -->
+	</div>
+	<div class="to-the-top" style="display: none;">
+		<a class="top-button">
+			<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				width="53px" height="20px" viewBox="0 0 53 20" enable-background="new 0 0 53 20" xml:space="preserve">
+				<g id="Ebene_3">
+				</g>
+				<g>
+					<polygon points="43.886,16.221 42.697,17.687 26.5,4.731 10.303,17.688 9.114,16.221 26.5,2.312 	"></polygon>
+				</g>
+			</svg>
+		</a>
+	</div>
+	<div class="overlay fade"></div>
+	<script type="text/javascript" src="/js/devicepx-jetpack.js"></script>
+	<script type="text/javascript">
 /* <![CDATA[ */
 var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="/js/mediaelement-and-player.min.js"></script>
-<script type="text/javascript" src="/js/wp-mediaelement.min.js"></script>
-<script type="text/javascript">
+	<script type="text/javascript" src="/js/mediaelement-and-player.min.js"></script>
+	<script type="text/javascript" src="/js/wp-mediaelement.min.js"></script>
+	<script type="text/javascript">
 /* <![CDATA[ */
 var soularity = {"gallery_prev":"<svg version=\"1.1\" id=\"Ebene_1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\"\r\n\twidth=\"18px\" height=\"40px\"  viewBox=\"0 0 18 40\" enable-background=\"new 0 0 18 40\" xml:space=\"preserve\">\r\n<g id=\"Ebene_2\">\r\n\t<g>\r\n\t\t<polygon points=\"16.3,40 0.3,20 16.3,0 17.7,1 2.5,20 17.7,39 \t\t\"\/>\r\n\t<\/g>\r\n<\/g>\r\n<\/svg>\r\n","gallery_next":"<svg version=\"1.1\" id=\"Ebene_1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" x=\"0px\" y=\"0px\"\r\n\twidth=\"18px\" height=\"40px\" viewBox=\"0 0 18 40\" enable-background=\"new 0 0 18 40\" xml:space=\"preserve\">\r\n<g id=\"Ebene_2\">\r\n\t<g>\r\n\t\t<polygon points=\"0.3,39 15.5,20 0.3,1 1.7,0 17.7,20 1.7,40 \t\t\"\/>\r\n\t<\/g>\r\n<\/g>\r\n<\/svg>\r\n","lightbox_prev":"<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" preserveAspectRatio=\"xMidYMid\" width=\"30\" height=\"20\" viewBox=\"0 0 30 20\">\n  <path d=\"M29.255,10.804 L2.624,10.804 L10.327,18.696 C10.619,18.995 10.619,19.481 10.327,19.780 C10.181,19.930 9.989,20.005 9.798,20.005 C9.607,20.005 9.415,19.930 9.269,19.780 L0.290,10.580 C0.220,10.509 0.165,10.424 0.127,10.330 C0.090,10.238 0.071,10.141 0.071,10.043 C0.071,10.041 0.070,10.039 0.070,10.037 C0.070,10.035 0.071,10.034 0.071,10.032 C0.071,9.934 0.090,9.836 0.127,9.745 C0.165,9.650 0.220,9.565 0.290,9.494 L9.269,0.294 C9.561,-0.005 10.035,-0.005 10.327,0.294 C10.619,0.594 10.619,1.079 10.327,1.378 L2.624,9.270 L29.255,9.270 C29.669,9.270 30.003,9.613 30.003,10.037 C30.003,10.461 29.669,10.804 29.255,10.804 Z\"\/>\n<\/svg>\n","lightbox_next":"<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\" preserveAspectRatio=\"xMidYMid\" width=\"30\" height=\"20\" viewBox=\"0 0 30 20\">\n  <path d=\"M29.873,9.745 C29.910,9.836 29.929,9.934 29.929,10.032 C29.929,10.034 29.930,10.035 29.930,10.037 C29.930,10.039 29.929,10.041 29.929,10.043 C29.929,10.141 29.910,10.238 29.873,10.330 C29.835,10.424 29.780,10.509 29.710,10.580 L20.731,19.780 C20.585,19.930 20.393,20.005 20.202,20.005 C20.011,20.005 19.819,19.930 19.673,19.780 C19.381,19.481 19.381,18.995 19.673,18.696 L27.376,10.804 L0.745,10.804 C0.331,10.804 -0.003,10.461 -0.003,10.037 C-0.003,9.613 0.331,9.270 0.745,9.270 L27.376,9.270 L19.673,1.378 C19.381,1.079 19.381,0.594 19.673,0.294 C19.965,-0.005 20.439,-0.005 20.731,0.294 L29.710,9.494 C29.780,9.565 29.835,9.650 29.873,9.745 Z\"\/>\n<\/svg>\n"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="/js/scripts.min.js"></script>
-<script type="text/javascript" src="/js/wp-embed.min.js"></script>
-		<script type="text/javascript">
+	<script type="text/javascript" src="/js/scripts.min.js"></script>
+	<script type="text/javascript" src="/js/wp-embed.min.js"></script>
+	<script type="text/javascript">
 			(function($) {
 
 				// back button fix (firefox) thx to Jesse from stack overfllow
@@ -774,5 +953,7 @@ var soularity = {"gallery_prev":"<svg version=\"1.1\" id=\"Ebene_1\" xmlns=\"htt
 				});
 			})(jQuery);
 		</script>
-			
-<span id="buffer-extension-hover-button" style="display: none;position: absolute;z-index: 8675309;width: 100px;height: 25px;background-image: url(chrome-extension://noojglkidnpfjbincgijbaiedldjfbhh/data/shared/img/buffer-hover-icon@1x.png);background-size: 100px 25px;opacity: 0.9;cursor: pointer;"></span></body></html>
+
+	<span id="buffer-extension-hover-button" style="display: none;position: absolute;z-index: 8675309;width: 100px;height: 25px;background-image: url(chrome-extension://noojglkidnpfjbincgijbaiedldjfbhh/data/shared/img/buffer-hover-icon@1x.png);background-size: 100px 25px;opacity: 0.9;cursor: pointer;"></span></body>
+
+</html>
