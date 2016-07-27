@@ -48,7 +48,7 @@ nav.standard ul li a {
 	text-decoration: none !important;
 	}
 #fullscreen-menu .menu-inner nav ul li a {
-	border-color: !important;
+	border-color: ''!important;
 	}
 #fullscreen-menu .menu-inner nav ul li.current-menu-item a, #fullscreen-menu .menu-inner nav ul li.current_page_item a, nav.standard ul li.current-menu-item a,
  nav.standard ul li.current_page_item a, #fullscreen-menu .menu-inner nav ul li.current-menu-item a:hover, #fullscreen-menu .menu-inner nav ul li.current_page_item a:hover,
@@ -62,7 +62,7 @@ nav.standard ul li.current-menu-item a, nav.standard ul li.current_page_item a, 
 	}
 #fullscreen-menu .menu-inner nav ul li.current-menu-item a, #fullscreen-menu .menu-inner nav ul li.current_page_item a, #fullscreen-menu .menu-inner nav ul li.current-menu-item a:hover,
  #fullscreen-menu .menu-inner nav ul li.current_page_item a:hover, .is-work #fullscreen-menu .menu-inner nav ul li.portfolio-grid a {
-	border-color: !important;
+	border-color: ''!important;
 	}
 #fullscreen-menu .menu-inner nav ul li a:hover, .follow-links ul li a svg, nav.standard ul li a:hover {
 	color: #ffffff !important;
@@ -74,7 +74,7 @@ nav.standard ul li a:hover {
 	text-decoration: line-through !important;
 	}
 #fullscreen-menu .menu-inner nav ul li a:hover {
-	border-color: !important;
+	border-color: ''!important;
 	}
 nav.standard ul li a {
 	font-size: 14px !important;
